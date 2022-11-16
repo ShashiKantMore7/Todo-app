@@ -6,18 +6,7 @@ import ItemList from "./components/ItemList";
 
 // console.log("i love");
 function App() {
-  const [tasks, setTask] = useState([
-    {
-      id: 1,
-      taskName: "go to supermarket",
-      complete: false,
-    },
-    {
-      id: 2,
-      taskName: "complete react assignments",
-      complete: false,
-    },
-  ]);
+  const [tasks, setTask] = useState([]);
   const [taskInp, setTaskInp] = useState("");
   function handleChange(e) {
     setTaskInp(e.target.value);
